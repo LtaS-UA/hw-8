@@ -1,0 +1,533 @@
+/*=================================================================================================================
+    YOUR STYLE here
+  ================================================================================================================= */
+@font-face {
+    font-family: 'proxima nova regular';
+    src: url('../fonts/proximanova-regular-webfont.eot');
+    src: url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-regular-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-regular-webfont.svg#proxima_novaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima nova bold';
+    src: url('../fonts/proximanova-bold-webfont.eot');
+    src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-bold-webfont.svg#proxima_novabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+  /* ie hack
+ don't remove that style*/
+.m-page {
+    display: block;
+}
+/* use to align content */
+.container {
+    width: 1470px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container::before,
+.container::after,
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+}
+.container::after,
+.clearfix::after{
+    clear: both;
+}
+/*=================================================================================================================
+    YOUR STYLE here
+  ================================================================================================================= */
+
+body{
+    font-family:'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+}
+
+ul{
+    list-style-type: none;
+    padding-left:0;
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+.button{
+    padding: 13px 0 15px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    width: 183px;
+    border-radius: 25px;
+    border: 2px solid white;
+    background-color: #17daa3;
+}
+.button:hover, .purchase:hover{
+    background-color: #ffa500;
+}
+.slider .button{
+    background-color: rgb(255,255,255);
+}
+a:hover{
+    transition: color 0.4s linear; 
+    cursor:pointer;
+}
+.centered{
+    text-align: center;
+}
+.wrapper {
+    overflow: hidden;
+    min-width: 1500px;
+    width:100%;
+}
+.back-wrapper{
+    background: url(../img/header-bg.jpg) no-repeat center rgba(0,0,0,0.55);
+    background-size: cover;
+    color: rgb(255,255,255);
+}
+h1{
+    width: 500px;
+    float: left;
+    margin-top: 40px;
+}
+h2~p, h3~p, .slider h2+span{
+    font-family: 'proxima nova regular', sans-serif;
+}
+h3+p{
+    font-size:18px;
+    color: #87949e;
+}
+.h-page nav{
+    float:right;
+    width:550px;
+    margin-top: 50px;
+}
+.h-page ul li, .slider ul li, .our-advanteges li, .opinion ul li, .f-page nav  li{
+    display: inline-block;
+}
+.h-page ul li a{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 12px 25px 15px;
+}
+.h-page ul li a:hover{
+    border-bottom: 2px solid #17daa3;
+}
+.h-page .search{
+    float: right;
+    margin-top: 50px;
+}
+.slider a.button{
+    background-color: transparent;
+}
+.slider  div.slider-inner{
+    margin:328px auto 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    position:relative;
+}
+.slider h2{
+    font-size: 60px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.slider h2>span{
+    font-weight: 700;
+}
+.slider h2+span{
+    font-weight: 300;
+    font-size: 24px;
+}*
+.slider a.button{
+    margin: 63px auto 72px;
+}
+.slider a.button:hover{
+    background-color: #29ddaa;
+}
+.slider ul li, .slider-author ul li{
+    width: 8px;
+    height: 8px;
+    border: 2px solid white;
+    border-radius:100%;
+}
+.slider ul li:hover, .slider-author ul li:hover{
+    background-color:white;
+    cursor:pointer;
+}
+.arr-left, .arr-right{
+    width:27px;
+    height:53px;
+    position:absolute;
+    top: 20%;
+}
+.arr-left{
+    background: url(../img/left-arrow.png);
+    left:0;
+}
+.arr-right{
+    background: url(../img/right-arrow.png);
+    right:0;
+}
+.arr-down{
+    background: url(../img/down-arrow.png);
+    display:block;
+    width:28px;
+    height: 15px;
+    margin:265px auto 58px;
+}
+.title{
+    text-align: center;
+}
+.about-us .title{
+    margin: 110px auto 156px;  
+}
+.figure-line{
+    width:30px;
+    height: 1px;
+    background-color:#17daa3;
+    margin: 17px auto;
+    
+}
+.title h2{
+    color: #576671;
+    font-size: 60px;
+    font-weight: 200;
+    margin-bottom:0;
+}
+.title p{
+    color: #87949e;
+    font-size: 18px;
+}
+.our-advanteges li a:first-child{
+    display:block;
+    box-sizing: border-box;
+    width: 182px;
+    height: 182px;
+    background-color: rgba(53,58,62,0.15);
+    border-radius:100%;
+    margin: auto;
+}
+.our-advanteges li{
+    width: 292px;
+    vertical-align:top;
+    margin-left:80px;
+}
+.our-advanteges li a:first-child:hover{
+    background-color: #17daa3;
+}
+.our-advanteges li a:first-child img{
+   padding-top:65px;
+}
+.our-advanteges h3{
+    margin: 80px auto 48px;
+    font-size: 30px;
+}
+.our-advanteges p{
+    line-height: 30px;
+}
+.our-advanteges li:nth-child(4n+1){
+    margin-left:0;
+}
+.about-us a.button{
+    margin: 107px auto;
+}
+.photo, .our-services, .pricing{
+    background-color: rgba(237,239,241,0.35);
+}
+.photo .title-article, .photo .image-wrap{
+    float:right;
+}
+.photo .image-wrap, .mac .image-wrap{
+    width: 720px;
+    margin-top: 150px;
+}
+.photo .image-wrap img, .mac .image-wrap img{
+    width:100%;
+    border-radius: 10px;
+}
+.photo .title-article{
+    padding-left: 30px;
+}
+.title-article{
+    width: 720px;
+    margin: 164px 0;
+}
+.title-article h3{
+    font-size: 60px;
+    font-weight: 200;
+    margin-top: 0;
+}
+h3 a{
+    color: #576671;
+}
+h3 a:hover{
+    color: #ffa500;
+}
+.title-article p{
+    margin: 72px 0 74px;
+    line-height: 31px;
+    color: #87949e;
+}
+.title-article .button{
+    margin-top: 74px;
+}
+.mac .title-article, .mac .image-wrap{
+    float:left;
+}
+.mac .title-article{
+    padding-right: 30px;
+}
+.opinion {
+    background: url(../img/photo.jpg) no-repeat black;
+    background-size: cover;
+}
+.opinion .container{
+    position: relative;
+}
+.opinion .slider-author{
+    margin: 188px auto 147px;
+}
+.opinion .arr-left{
+    top: 50%;
+    left: 15px;
+}
+.opinion .arr-right{
+    top: 50%;
+    right: 15px;
+}
+.slider-author p:first-of-type{
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 45px auto 38px;
+}
+.slider-author p:first-of-type span{
+    color: #17daa3;
+}
+.slider-author p:last-of-type{
+    opacity: 0.3;
+    color: white;
+    font-weight: 300;
+}
+.slider-author p:last-of-type span{
+    font-weight: 500;
+}
+.slider-author ul{
+    margin: 123px auto 147px;
+}
+.our-services .title{
+    margin: 108px auto 191px;
+}
+.our-services section{
+    margin-bottom: 63px;
+}
+.our-services article{
+    width: 675px;
+    position:relative;
+    padding-top:1px;
+    display:inline-block;
+    vertical-align: top;
+}
+.our-services article:nth-child(odd){
+    padding-right:80px;
+}
+.our-services article .services-icon{
+    width: 94px;
+    height: 94px;
+    box-sizing: border-box;
+    position:absolute;
+    border-radius: 100%;
+}
+.our-services article:first-child .services-icon{
+    background: url(../img/portfolio.png) no-repeat center center #fff;
+}
+.our-services article:nth-child(2) .services-icon{
+    background: url(../img/design.png) no-repeat center center #fff;
+}
+.our-services article:nth-child(3) .services-icon{
+    background: url(../img/branding.png) no-repeat center center #fff;
+}
+.our-services article:nth-child(4) .services-icon{
+    background: url(../img/development.png) no-repeat center center #fff;
+}
+.our-services  .about-title{
+    padding-left: 144px;
+    margin: 25px 0 0;
+}
+.our-services article h3{
+    font-size: 60px;
+    font-weight: 200;
+    margin:0;
+}
+.our-services article p{  
+    padding-bottom:75px;
+    line-height: 48px;
+}
+.our-team .title{
+    margin: 112px auto;
+}
+.pricing .title{
+    margin: 111px auto 107px;
+}
+.our-team{
+    width:100%;
+}
+.our-team li{
+    width:20%;
+    float: left;
+    margin:0;
+    position:relative;
+    overflow:hidden;
+}
+.our-team li img{
+    max-width: 100%;
+    height:auto;
+}
+.overlay{ 
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 221, 172, 0.9);
+    text-align: center;
+    opacity: 0;
+    padding: 50% 0;
+    overflow:hidden;
+}
+.overlay:hover{
+    opacity:0.9;
+}
+.overlay span{
+    color: white;
+    font-size: 36px;
+    font-weight: 200;
+}
+.price-list{
+    margin-bottom: 111px;
+}
+.price-list  li{
+    width:345px;
+    display:inline-block;
+    background-color: white;
+    color: #87949e;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(227, 227, 227, 0.35);
+    margin-right:25px;
+}
+.price-list  li:nth-child(2n+4){
+    margin-right:0;
+}
+.price{
+    padding-left:33px;
+    padding-right:80px;
+}
+.price span:first-of-type{
+    color: #17daa3;
+    font-size: 60px;
+    font-weight: 200;
+}
+.price span:nth-child(2){
+    padding-top:22px;
+    display:block;
+    opacity: 0.45;
+}
+.price span:nth-child(2), .price-list li>p{
+    font-size: 18px;
+    font-family: 'proxima nova regular';
+}
+.price-list li>p{
+    line-height: 39px;
+    padding:49px 80px 57px 33px;
+}
+.price{
+    border-bottom: 1px solid rgba(237,239,241,0.35);
+    padding: 43px 80px 57px 33px;
+}
+.purchase{
+    background:url(../img/purchase.png) no-repeat 90% 50% ;
+    background-color: #17daa3;
+    font-family: 'proxima nova bold';
+    color: white;
+    padding: 27px 80px 27px 33px;
+    border-radius:0 0 5px 5px;
+    display:block;
+}
+.map .container{
+    background: url(../img/map.png) no-repeat right;
+    background-size:50%;
+}
+.map .title-article p{
+    margin-top: 60px;
+}
+.map .title-article h3{
+    font-size: 60px;
+    font-weight: 200;
+}
+.map .title-article{
+    margin: 191px 0;
+}
+.our-template{
+    background: url(../img/try-our-template.jpg) no-repeat center #000;
+    background-size:cover;
+}
+.our-template .title p:first-of-type{
+    color: white;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 58px;
+    margin: 282px auto 98px;
+}
+.our-template .title p:first-of-type span{
+    font-weight: 700;
+}
+.our-template a.button{
+    margin: 98px auto 272px;
+    font-weight: 700;
+    border:0;
+    padding-top: 16px;
+}
+.f-page{
+    background: url(../img/footer-smart-object.png) no-repeat center;
+    background-size: cover;
+}
+.f-page nav{
+    margin:75px 0 660px;
+    float:right;
+    width: 450px;
+}
+.f-page nav a{
+    color: #87949e;
+    font-size: 18px;
+    margin-right: 35px;
+    display:block;
+}
+.f-page nav a:hover{
+    border-bottom: 2px solid #17daa3;
+}
+.f-page nav li:last-child a:{
+    margin-right: 0;
+}
+.author-logo{
+    float:left;
+    margin:75px 0 480px;
+    color: #87949e;
+    font-size: 18px;
+}
+.author-logo img{
+    vertical-align: middle;
+}

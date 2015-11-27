@@ -1,0 +1,41 @@
+﻿fieldset{
+    width: 500px;
+}
+dd{
+    margin-left:5px;
+}
+input{
+    margin-right:5px;  
+}
+.margin_inp input{
+    margin-left: 5px;
+}
+.margin_inp dd{
+    margin: 10px;
+}
+input[type=number]{
+    width: 50px;
+}
+textarea{
+    margin-bottom: 10px;
+}
+.ital_style{
+    font-style: italic;
+    display: block;
+    font-weight: normal;
+}
+.dt_title{
+    
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.bord-title{
+    margin-bottom:auto;
+}
+.hidden_label{
+    display:none;
+}
+button{
+    margin-top: 15px;
+}
